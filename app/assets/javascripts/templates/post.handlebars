@@ -1,0 +1,13 @@
+{{#if isEditing}}
+	<form>
+		{{view Ember.TextField valueBinding="title" class="input-block-level"}}
+		{{view Ember.TextArea valueBinding="body" class="input-block-level"}}
+		<button {{action save}}>Save</button>
+		<button {{action cancel}}>Cancel</button>
+	</form>
+{{else}}
+	<article {{action editing}}>
+		<h1>{{title}}</h1>
+		<p>{{body}}</p>
+	</article>
+{{/if}}

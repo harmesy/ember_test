@@ -1,0 +1,14 @@
+$bodyBackground: #f1f6ff !important;
+$navbarBackground: #fefefe;
+$linkColorHover: #3d4255 !important;
+
+@import 'bootstrap';
+
+.top-container {
+	width: 100%;
+}
+
+#main_content {
+	padding: 20px;
+	background: $navbarBackground;
+}

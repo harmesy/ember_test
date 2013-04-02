@@ -16,8 +16,9 @@ development:
   adapter: postgresql
   encoding: unicode
   database: ember_test_development
+  host: localhost
   pool: 5
-  username: ember_test
+  username: mattharmes
   password:
 
   # Connect on a TCP socket. Omitted by default since the client uses a
@@ -42,8 +43,9 @@ test:
   adapter: postgresql
   encoding: unicode
   database: ember_test_test
+  host: localhost
   pool: 5
-  username: ember_test
+  username: mattharmes
   password:
 
 production:

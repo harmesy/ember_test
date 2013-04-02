@@ -6,7 +6,20 @@ gem 'rails', '3.2.12'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'pg'
+gem 'ember-rails'
+gem 'bootstrap-sass'
 
+group :test, :development do
+	gem 'rspec-rails'
+end
+
+group :development do
+	gem 'spork'
+end
+
+group :test do
+	gem 'capybara'
+end
 
 # Gems used only for assets and not required
 # in production environments by default.
